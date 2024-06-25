@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <!-- -------CSS links--------- -->
+    <link rel="stylesheet" href="./styles/amazon.css">
+
+    <!-- ------------GOOGLE fonts-------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- ------FONT AWESOME------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="left-part">
+            <a href="amazon.html" class="header-link">
+                <img src="./images/amazon-logo-white.png" alt="" class="amazon-logo">
+                <img src="images/amazon-mobile-logo-white.png" alt="mobile-logo" class="mobile-amazon-logo">
+            </a>
+        </div>
+
+        <div class="middle-part">
+            <input type="text" placeholder="Search">
+            <img src="./images/icons/search-icon.png" class="search-icon">
+        </div>
+
+        <div class="right-part">
+            <a href="" class="header-link">
+                <div class="returns-orders">
+                    <span class="return-text">Returns</span>
+                    <span class="order-text">& Orders</span>
+                </div>
+            </a>
+
+            <a href="checkout.html" class="header-link">
+                <div class="cart">
+                    <img src="./images/icons/cart-icon.png" alt="">
+                    <span class="cart-count">0</span>
+                    <strong>Cart</strong>
+                </div>
+            </a>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+    <div id="main">
+        <div class="js-product-container">
+
+        </div>
+    </div>
+
+    <script type="module" src="/scripts/amazon.js"></script>
+
+</body>
+
+</html>
