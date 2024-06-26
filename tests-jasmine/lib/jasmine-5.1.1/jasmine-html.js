@@ -106,7 +106,7 @@ jasmineRequire.HtmlReporter = function(j$) {
           { className: 'jasmine-banner' },
           createDom('a', {
             className: 'jasmine-title',
-            href: 'http://jasmine.github.io/',
+            href: 'https://jasmine.github.io/',
             target: '_blank'
           }),
           createDom('span', { className: 'jasmine-version' }, j$.version)
