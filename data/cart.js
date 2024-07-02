@@ -32,16 +32,20 @@ function saveToStorage() {
 
 export function addToCart(productID) {
   let checkitem;
+  const quantitySelector = document.querySelector(`.js-quantity-selector-${productID}`)
+  const selectQuantity  = Number(quantitySelector.value)
+  console.log(selectQuantity)
+
   cart.forEach(item => {
     if (productID === item.productId)
       checkitem = item;
   })
   if (checkitem) {
-    checkitem.quantity += 1
+    checkitem.quantity += selectQuantity
   } else {
     cart.push({
       productId: productID,
-      quantity: 1,
+      quantity: selectQuantity,
       deliveryOptionId: '1'
     })
   }

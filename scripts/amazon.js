@@ -35,7 +35,7 @@ function renderProductsHtml() {
         </strong>
 
         <div class="product-quantity-container">
-            <select>
+            <select class="js-quantity-selector-${product.id}">
                 <option selected value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -82,6 +82,7 @@ function renderProductsHtml() {
   document.querySelectorAll(".add-to-cart-button").forEach((btn => {
     btn.addEventListener('click', () => {
       const productID = btn.dataset.productId
+
       addToCart(productID)
       updateCartQuantity();
       
